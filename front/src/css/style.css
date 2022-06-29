@@ -1,3 +1,16 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+content {
+  display: block;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -56,17 +69,40 @@ a {
   color: inherit;
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #000D36;
 }
 
-* {
-  box-sizing: border-box;
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 25rem;
+  width: 30rem;
+  padding: 50px;
+  gap: 1rem;
+  border-radius: 1rem;
 }
-
-content {
-  display: block;
+.form input {
+  all: unset;
+  height: 45px;
+  width: 100%;
+  padding: 5px;
+  border: 2px solid white;
+  border-radius: 0.25rem;
+  background: #FFFFFF;
+}
+.form input::placeholder {
+  font-size: 1.1rem;
+  color: gray;
+}
+.form input:focus {
+  outline: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,9 @@
+@use '../abstracts/' as *;
+
+.container {
+    @include flex-center();
+    min-height: 100vh;
+
+    // background-image: linear-gradient($white, $primaryBlue);
+    background: $primaryBlue;
+}

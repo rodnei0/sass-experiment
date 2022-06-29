@@ -1,25 +1,16 @@
-import React from 'react';
-import './css/style.css';
-import './css/style.css.map';
+import React from "react";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import Registration from "./pages/Registration";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+	return (
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" element={<Registration />} />
+				</Routes>
+			</BrowserRouter>
+	);
 }
 
 export default App;
